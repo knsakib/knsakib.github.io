@@ -1,0 +1,121 @@
+
+ /* remove the list style */
+	#top_menu  {
+		margin:0px; 
+		padding:0px; 
+		list-style:none;
+	}	
+	
+		/* make the LI display in-line */
+		/* it's position relative so that position absolute */
+		/* can be used in sub-menu */
+		#top_menu li {
+			float:left; 
+			display:block; 
+			width: 120px;
+			height: 30px;
+			border-radius: 10px;
+			border: 3px solid black; 
+			position:relative;
+			z-index:500; 
+			list-style: none;
+			margin: 5px ;
+			padding: 3px;
+			background:white;
+			 
+			
+		}
+		
+		#top_menu a:link {color:black;}
+		#top_menu a:link {text-decoration:none;}
+		#top_menu a:visited {text-decoration:none;}
+		#top_menu a:visited {color:black;}
+	
+		
+		/* this is the parent menu */ /*the order is = ul>li>ul>li>a*/
+		#top_menu li a {
+			display:block; 
+			padding:0px; 
+			text-decoration:none; 
+			font: bold 12px Arial;
+			text-align: center;
+			height: 35px;
+		}
+		
+		
+		/* submenu, it's hidden by default */
+		#top_menu ul {
+			position:absolute; 
+			display:none; 
+			margin-left:-12px; 
+			margin-top:0px;
+			padding:0px; 
+			list-style:none;
+			
+			}
+
+			
+body{
+	max-width: 1080px; /*this is needed for flexible box style*/
+	display:-webkit-box; /*this is needed for flexible box model; it says about a special tool box/kit that holds some flexible boxes*/
+	/*and this will not work in all the browser*/
+	margin-top: 20px;
+	margin-left: 40px;	
+	
+}
+		
+		
+		
+	#big_guy{
+	/*width:100%; /*this is needed for flexible box style*/
+	display:-webkit-box; /*this is needed for flexible box model; it says about a special tool box/kit that holds some flexible boxes*/
+	/*and this will not work in all the browser*/
+	-webkit-box-orient: vertical; /*each child under big_guy will be shown as a box place vertical*/
+	-webkit-box-flex: 1; /*the value of the website width/height is flexible*/
+	 }
+
+	
+	
+#main_section{ /*under section_div are main section and side news*/
+-webkit-box-flex: 1;
+display:-webkit-box;
+/*margin:20px;*/
+position: relative;
+margin: 0px;
+padding:5px;
+margin-top: 5px;
+border: 3px solid black;
+border-radius: 10px;
+height: 470px;
+}
+
+#content{ /*under section_div are main section and side news*/
+-webkit-box-flex: 1;
+display:-webkit-box;
+/*margin:20px;*/
+margin: 0px;
+padding:0px;
+-webkit-box-orient: vertical; 
+padding:5px;
+}
+
+/*margin:0 0 0 0 means margin: north east south west*/
+
+
+p{
+line-height:170%;
+font-family: Arial;
+font-size: 16px;
+}
+
+
+/*#main_section div:not(#home){ //hide done with jquery; no need here
+display: none;
+}*/
+
+
+
+
+
+
+

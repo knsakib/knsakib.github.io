@@ -1,0 +1,50 @@
+#content1{
+position: relative;
+padding:0px;
+margin: 0px;
+-webkit-box-flex: 1;
+-webkit-box-orient: horizontal;
+display:-webkit-box;
+}
+
+#form{ /*under section_div are main section and side news*/
+position: relative;
+padding:5px;
+margin: 5px;
+}
+
+#tweetwrap{
+position: relative;
+padding:0px;
+margin: 0px;
+-webkit-box-flex: 1;
+-webkit-box-orient: vertical;
+display:-webkit-box;
+overflow:auto;
+}
+
+#tweet{
+position: relative;
+padding:0px;
+margin:0px;
+}
+
+#tweet1{
+position: relative;
+padding:0px;
+margin: 0px;
+}
+
+
+
+#tweetcontainer
+{
+-webkit-box-flex: 1;
+display:-webkit-box;
+padding:0px;
+margin: 0px;
+-webkit-box-orient: vertical; 
+}
+
+
+

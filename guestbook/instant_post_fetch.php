@@ -3,7 +3,7 @@
 $time=time();
 $errors=array(); // to pick errors messages 
 
-if (mysql_connect('ec2-54-187-216-239.us-west-2.compute.amazonaws.com','root','HssM4F') && mysql_select_db('messages')){
+if (mysql_connect('ec2-54-187-216-239.us-west-2.compute.amazonaws.com','root','') && mysql_select_db('messages')){
 
     if (isset($_POST['guestbook_name'], $_POST['guestbook_email'], $_POST['guestbook_message'])){ 
     $guestbook_name = mysql_real_escape_string(htmlentities($_POST['guestbook_name']));

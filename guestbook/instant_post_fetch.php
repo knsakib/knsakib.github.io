@@ -3,7 +3,7 @@
 $time=time();
 $errors=array(); // to pick errors messages 
 
-if (mysql_connect('fdb2.biz.nf','1470566_post','rootpass') && mysql_select_db('1470566_post')){
+if (mysql_connect('ec2-54-187-216-239.us-west-2.compute.amazonaws.com','root','HssM4F') && mysql_select_db('messages')){
 
     if (isset($_POST['guestbook_name'], $_POST['guestbook_email'], $_POST['guestbook_message'])){ 
     $guestbook_name = mysql_real_escape_string(htmlentities($_POST['guestbook_name']));
@@ -25,7 +25,7 @@ if (mysql_connect('fdb2.biz.nf','1470566_post','rootpass') && mysql_select_db('1
         }
 
         if (empty($errors)){ // SQL value injection
-            $insert="INSERT INTO `entries` VALUES('','$time','$guestbook_name','$guestbook_email','$guestbook_message')";
+            $insert="INSERT INTO `message` VALUES('','$time','$guestbook_name','$guestbook_email','$guestbook_message')";
                 
                 if ($insert=mysql_query($insert)){ //overriding $insert with mysql->$insert
                 echo ':) Thank you! '.$guestbook_name.' for your post';

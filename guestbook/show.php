@@ -1,6 +1,6 @@
 <?php
 
-if (mysql_connect('54.187.216.239','sakib','sakibWeb') && mysql_select_db('messages')){
+if (mysql_connect('54.187.216.239','sakib','sakibWeb') && mysql_select_db('guestbook')){
 // if mysql connected and mysql database guestbook connected
 // @ sign before 'mysql_connect' and 'mysql_select_db' force not to show default error message
 

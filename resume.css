@@ -76,6 +76,90 @@ a#pdf:hover { background: #222; }
 .title-left {width:50%; float: left;}
 .title-right {width:50%; float: right;}
 
+#doc2.resume-page {
+    width: auto;
+    max-width: 73.076em;
+}
+
+@media screen and (max-width: 48em) {
+    .resume-page #inner {
+        padding: 10px 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .resume-page .title-left,
+    .resume-page .title-right,
+    .resume-page .yui-gf .yui-u,
+    .resume-page .yui-gf div.first,
+    .resume-page .talent {
+        float: none;
+        width: auto;
+    }
+
+    .resume-page #hd h1,
+    .resume-page #hd h2 {
+        letter-spacing: 0;
+    }
+
+    .resume-page .yui-gf div.first,
+    .resume-page .talent h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .resume-page .title-right,
+    .resume-page .talent + .talent {
+        margin-top: 0.75em;
+    }
+
+    .resume-page p {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .resume-page .job h4 {
+        position: static;
+        margin-top: 0.25em;
+    }
+}
+
+@media print {
+    .resume-page #inner {
+        padding-inline: 0;
+    }
+
+    .resume-page .title-left {
+        width: 44%;
+    }
+
+    .resume-page .title-right {
+        width: 53%;
+    }
+
+    .resume-page .yui-gf .yui-u {
+        width: 80%;
+    }
+
+    .resume-page .yui-gf div.first {
+        width: 17%;
+    }
+
+    .resume-page p {
+        padding-right: 0;
+    }
+
+    .resume-page .talent p {
+        padding-right: 1em;
+    }
+
+    .resume-page .job h2 {
+        padding-right: 12rem;
+    }
+
+    .resume-page .job h4 {
+        top: 0;
+    }
+}
+
 
 
 /* #yui-main > div > div:nth-child(1) > div:nth-child(2){font-size: 120%} */
